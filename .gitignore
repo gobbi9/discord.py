@@ -3,3 +3,6 @@
 *.log
 docs/_build
 *.buildinfo
+build/
+discord.py.egg-info/
+dist/
