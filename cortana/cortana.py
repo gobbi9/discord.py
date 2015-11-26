@@ -34,6 +34,21 @@ def on_message(message):
             soma += i
         client.send_message(message.channel, str(soma))
 
+    if ("!file" in message.content):
+        client.send_file(message.channel, "test.txt")
+
+    if ("!gif" in message.content):
+        client.send_message(message.channel, "http://i.imgur.com/KWAxV5U.gif")
+
+    if ("!broa" in message.content or "!stream" in message.content):
+        client.send_message(message.channel, "http://www.hitbox.tv/Checkpoint")
+
+    msg =  message.content.lower()
+    if ("quem" in msg):
+        freq = msg.count("quem")
+        if (freq >= 3):
+            client.send_message(message.channel, "! ".join(["Meruem"]*freq)+"!")
+
 
 @client.event
 def on_ready():

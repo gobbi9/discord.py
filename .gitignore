@@ -6,3 +6,4 @@ docs/_build
 build/
 discord.py.egg-info/
 dist/
+credentials.txt
