@@ -1,10 +1,10 @@
 import discord
 import logging
-#from cortanacredentials import Credentials
-import cortana
+
+from credentials import Credentials
 
 credentials = Credentials()
-print(credentials.email, credentials.password)
+
 # Set up the logging module to output diagnostic to the console.
 logging.basicConfig()
 
