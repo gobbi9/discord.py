@@ -1,0 +1,2 @@
+ - check privileges before exec cmd
+ - check if stream is live before sending link -- say so if otherwise
