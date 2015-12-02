@@ -19,7 +19,7 @@ if not client.is_logged_in:
 def on_message(message):
 
     for user in message.mentions:
-        if user.name == "Kortana":
+        if user == client.user:
             client.send_message(message.channel, "Ich bin eine künstliche Intelligenz.")
         if user.name == "Pace":
             client.send_message(message.channel, "De acordo com os meus cálculos, o Roberto é **viado**.")
