@@ -41,7 +41,7 @@ def on_message(message):
         client.send_message(message.channel, "http://i.imgur.com/KWAxV5U.gif")
 
     if ("!broa" in message.content or "!stream" in message.content):
-        client.send_message(message.channel, "http://www.hitbox.tv/Checkpoint")
+        client.send_message(message.channel, "http://www.hitbox.tv/checkpoint")
 
     msg =  message.content.lower()
     if ("quem" in msg):
