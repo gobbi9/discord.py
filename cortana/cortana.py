@@ -1,5 +1,6 @@
 import discord
 import logging
+import requests
 
 from credentials import Credentials
 
@@ -44,7 +45,14 @@ def on_message(message):
         client.send_message(message.channel, "http://i.imgur.com/KWAxV5U.gif")
 
     if ("!broa" in message.content or "!stream" in message.content):
-        client.send_message(message.channel, "http://www.hitbox.tv/checkpoint")
+        r = requests.get("https://api.hitbox.tv/media/status/Checkpoint")
+
+        if r.json()["media_is_live"] == "1":
+            myMessage = "http://www.hitbox.tv/Checkpoint"
+        else:
+            myMessage = "A stream está offline :sob:"
+
+        client.send_message(message.channel, myMessage)
 
     msg =  message.content.lower()
     if ("quem" in msg):

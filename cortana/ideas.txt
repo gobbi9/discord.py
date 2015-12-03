@@ -1,2 +1,5 @@
- - check privileges before exec cmd
- - check if stream is live before sending link -- say so if otherwise
+[ ] check privileges before exec cmd
+[X] check if stream is live before sending link -- say so if otherwise
+	"references":
+    http://developers.hitbox.tv/#list-live-media
+	http://stackoverflow.com/questions/3160909/how-do-i-deal-with-certificates-using-curl-while-trying-to-access-an-https-url
