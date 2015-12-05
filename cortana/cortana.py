@@ -38,6 +38,9 @@ def on_message(message):
             soma += i
         client.send_message(message.channel, str(soma))
 
+    if (message.content == 'o/'):
+        client.send_message(message.channel, '\o')
+
     if ("!file" in message.content):
         client.send_file(message.channel, "test.txt")
 
