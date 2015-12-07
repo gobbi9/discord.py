@@ -1,3 +1,4 @@
+# coding: latin-1
 import discord
 import logging
 import requests
