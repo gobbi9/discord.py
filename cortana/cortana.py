@@ -29,7 +29,7 @@ def on_message(message):
     if message.mention_everyone:
         if message.content.lower().find('bom dia') >= 0:
             client.send_message(message.channel, 'Bom dia, {}!'.format(message.author.mention()))
-    if message.content.find('robert') >= 0:
+    if message.content.lower().find('robert') >= 0:
         client.send_message(message.channel, "De acordo com os meus cálculos, o Roberto é **viado**.")
     if message.content.startswith('!cortana'):
         #client.send_message(message.channel, 'Hello {}!'.format(message.author.mention()))
