@@ -20,6 +20,9 @@ if not client.is_logged_in:
 @client.event
 def on_message(message):
 
+    if message.author == client.user:
+        return
+
     for user in message.mentions:
         if user == client.user:
             client.send_message(message.channel, "Ich bin eine künstliche Intelligenz.")
